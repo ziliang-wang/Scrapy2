@@ -6,6 +6,7 @@
 ##### 2，若全站爬取"全国所有的二手车"，2020/4/15当天为例，共约14万笔
 
 #### 关键代码1:前置处理代码块--使用Selenium获取动态渲染的城市数据与lxml获取所有品牌
+##### Note:使用text获取文本值若为空，表示该文本被隐藏，此时，可以获取title属性，或是innerHTML，比如get_attribute('innerHTML')，就可以获取到文本值
 
 ![img1](https://github.com/ziliang-wang/Scrapy2/blob/master/guazi/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200331200127.png)
 
