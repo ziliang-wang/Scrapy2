@@ -7,9 +7,9 @@
 
 #### 关键代码1:前置处理代码块--使用Selenium获取动态渲染的城市数据与lxml获取所有品牌
 ##### Note:使用text获取文本值若为空，表示该文本被隐藏，此时，可以获取title属性，或是innerHTML，比如get_attribute('innerHTML')，就可以获取到文本值!
-
 ![img1](https://github.com/ziliang-wang/Scrapy2/blob/master/guazi/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200331200127.png)
-
+##### 或是--for PhantomJS，All cities部份
+![img4](https://github.com/ziliang-wang/Scrapy2/blob/master/guazi/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200416005026.png)
 ### 破解反爬策略
 #### 1，瓜子二手车的反爬策略: cookis反爬虫，未带cookies下返回的是经过混肴的js，如下图:
 ![img3](https://github.com/ziliang-wang/Scrapy2/blob/master/guazi/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200415165830.png)
