@@ -10,9 +10,9 @@
 ![img1](https://github.com/ziliang-wang/Scrapy2/blob/master/guazi/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200331200127.png)
 
 ### 破解反爬策略
-#### 瓜子二手车的反爬策略: cookis反爬虫，未带cookies下返回的是经过混肴的js，如下图:
+#### 1，瓜子二手车的反爬策略: cookis反爬虫，未带cookies下返回的是经过混肴的js，如下图:
 ![img3](https://github.com/ziliang-wang/Scrapy2/blob/master/guazi/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200415165830.png)
-#### 关键代码2:自定义中间件/破解反爬js
+#### 2，关键代码2:自定义中间件/破解反爬js
 #### with语句配合open上下文管理器，文件路径部份使用的是绝对路径，而非相对路径
 
 ![img2](https://github.com/ziliang-wang/Scrapy2/blob/master/guazi/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200331202024.png)
