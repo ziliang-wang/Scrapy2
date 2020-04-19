@@ -18,3 +18,7 @@
 #### with语句配合open上下文管理器，文件路径部份使用的是绝对路径，而非相对路径
 
 ![img2](https://github.com/ziliang-wang/Scrapy2/blob/master/guazi/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200331202024.png)
+### 补充说明：关spider的部份，此部份代码较简单，唯一要注意的是：
+##### 1，刚开始从mongo取出来并发出去的请求，其返回的response会先经过downloader middleware中的js反反爬逻辑，再丢给调度器排序，然后再下载，属于同一个请求，所以要加上参数dont_filter = True，即不过滤同一个请求，请见下图：
+
+##### 2 同理，下一页，即每一次的翻页请求，也需要经过下载器中间件的处理，也一样需要设置dont_filter = True，请见下图：
